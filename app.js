@@ -1,7 +1,6 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode = 'environment' },
-else {
-    videoConstraints.deviceId = { exact: select.value }
+var constraints = { video: { facingMode = 'AVCaptureSession' }, audio: false };
+
 
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
