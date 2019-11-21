@@ -1,7 +1,5 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode = 'AVCaptureSession' }, audio: false };
-
-
+var constraints = { video: { facingMode: "environment" }, audio: false };
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
@@ -15,9 +13,9 @@ function cameraStart() {
         track = stream.getTracks()[0];
         cameraView.srcObject = stream;
     })
-    // .catch(function(error) {
-    //     console.error("Oops. Something is broken.", error);
-    // });
+    .catch(function(error) {
+        console.error("Oops. Something is broken.", error);
+    });
 }
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
