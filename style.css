@@ -14,17 +14,17 @@
 
 #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
-    filter: FlipH;
+    
 }
 
 #camera--trigger,#camera--image{
 
-    width: 150px;
-    background-color: pink;
+    width: 130px;
+    background-color: grey;
     border-radius: 20px;
     border: none;
-    padding: 10px 15px;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    padding: 5px 10px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 20px;
     left: calc(50% - 100px);
