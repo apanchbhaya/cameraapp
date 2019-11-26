@@ -41,3 +41,16 @@
     right: 20px;
     z-index: 2;
 }
+
+#loading--screen{
+
+position: fixed;
+fill: purple;
+    height: 10px;
+    width: 10px;
+    object-fit: cover;
+
+z-index: 2;
+
+
+
